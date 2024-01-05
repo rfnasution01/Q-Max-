@@ -17,7 +17,7 @@ export function MainLayoutHeaderTitle({
     >
       {isShow && (
         <Link
-          href=""
+          href="/"
           className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer"
         >
           <Webhook size={28} className="animate-spin duration-0" />

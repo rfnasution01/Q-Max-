@@ -19,7 +19,7 @@ export function ButtonComponent({
       style={{
         ...style,
       }}
-      className={`bg-[#1094DD] w-full p-3 rounded-full text-[#fff] transition duration-300 ease-in-out hover:bg-[#0a75a9] ${className}`}
+      className={`bg-[#1094DD] w-full p-2 px-4 rounded-full text-[#fff] transition duration-300 ease-in-out hover:bg-[#0a75a9] ${className}`}
     >
       {children}
     </button>

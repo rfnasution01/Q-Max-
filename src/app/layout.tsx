@@ -80,7 +80,7 @@ export default function RootLayout({
           <div
             className={`${
               isShow
-                ? "lg:col-span-10 md:col-span-8"
+                ? "lg:col-span-10 md:col-span-9"
                 : "lg:col-span-11 md:col-span-11"
             } sm:col-span-12 col-span-12`}
           >
