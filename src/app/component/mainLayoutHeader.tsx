@@ -1,7 +1,10 @@
-import { List, Webhook } from "lucide-react";
-import Link from "next/link";
-import { Dispatch, SetStateAction, useState } from "react";
-import { MainLayoutHeaderNavigation, MainLayoutHeaderTitle } from "./fragments";
+import { Dispatch, SetStateAction } from "react";
+import {
+  ButtonComponent,
+  MainLayoutHeaderNavigation,
+  MainLayoutHeaderTitle,
+} from ".";
+import { Wallet } from "lucide-react";
 
 export function MainLayoutHeader({
   isShow,
@@ -16,6 +19,13 @@ export function MainLayoutHeader({
         <MainLayoutHeaderTitle isShow={isShow} setIsShow={setIsShow} />
         <MainLayoutHeaderNavigation isShow={isShow} />
       </div>
+      <ButtonComponent
+        disabled
+        className="flex gap-2 text-[14px] items-center justify-center disabled:cursor-not-allowed"
+      >
+        <Wallet size={16} />
+        {isShow && <h5>Connect Wallet</h5>}
+      </ButtonComponent>
     </div>
   );
 }

@@ -26,7 +26,11 @@ export function MainLayoutHeaderNavigation({ isShow }: { isShow: boolean }) {
                 item?.name.toLowerCase() === path
                   ? "border-[#1094DD] bg-[#F2F8FF] text-[#1094DD]"
                   : "border-[transparent]"
-              } hover:cursor-pointer hover:border-l-2 hover:border-[#1094DD] hover:bg-[#F2F8FF] hover:text-[#1094DD] transition duration-300 ease-in-out`}
+              } hover:border-l-2 hover:border-[#1094DD] hover:bg-[#F2F8FF] hover:text-[#1094DD] ${
+                item?.access
+                  ? "hover:cursor-pointer"
+                  : "pointer-events-none text-gray-500 no-underline cursor-not-allowed"
+              } transition duration-300 ease-in-out`}
             >
               <span>{item?.icon}</span>
               {isShow && <h5>{item?.name}</h5>}
