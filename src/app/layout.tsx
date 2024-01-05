@@ -60,14 +60,22 @@ export default function RootLayout({
         {/* Add more meta tags as needed */}
       </head>
       <body className={inter.className}>
-        <div className="bg-white text-black min-h-screen grid grid-cols-12">
-          <div className="lg:col-span-2 sm:col-span-12 col-span-12 hidden md:block shadow-md">
+        <div className="bg-white text-black min-h-screen grid grid-cols-12 transition duration-300 ease-in-out">
+          <div
+            className={`${
+              isShow ? "lg:col-span-2" : "lg:col-span-1"
+            } sm:col-span-12 col-span-12 hidden md:block shadow-md`}
+          >
             <header>
               {/* <!-- Header halaman, bisa berisi judul, logo, atau navigasi --> */}
               <MainLayoutHeader isShow={isShow} setIsShow={setIsShow} />
             </header>
           </div>
-          <div className="lg:col-span-10 sm:col-span-12 col-span-12">
+          <div
+            className={`${
+              isShow ? "lg:col-span-10" : "lg:col-span-11"
+            } sm:col-span-12 col-span-12`}
+          >
             <main className="text-center">{children}</main>
           </div>
         </div>
