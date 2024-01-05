@@ -2,7 +2,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MainLayoutHeader } from "./component";
+import {
+  MainLayoutFooter,
+  MainLayoutHeader,
+  MobileMainLayoutHeader,
+} from "./component";
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -62,9 +66,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="bg-white text-black min-h-screen grid grid-cols-12 transition duration-300 ease-in-out">
           <div
-            className={`${
-              isShow ? "lg:col-span-2" : "lg:col-span-1"
-            } sm:col-span-12 col-span-12 hidden md:block shadow-md`}
+            className={`sm:col-span-12 hidden md:block ${
+              isShow
+                ? "lg:col-span-2 md:col-span-3"
+                : "lg:col-span-1 md:col-span-1"
+            } col-span-12 shadow-md`}
           >
             <header>
               {/* <!-- Header halaman, bisa berisi judul, logo, atau navigasi --> */}
@@ -73,16 +79,20 @@ export default function RootLayout({
           </div>
           <div
             className={`${
-              isShow ? "lg:col-span-10" : "lg:col-span-11"
+              isShow
+                ? "lg:col-span-10 md:col-span-8"
+                : "lg:col-span-11 md:col-span-11"
             } sm:col-span-12 col-span-12`}
           >
             <main className="text-center">{children}</main>
           </div>
         </div>
 
+        <MobileMainLayoutHeader />
+
         <footer className="flex gap-4 w-full justify-between fixed bottom-0 left-0 w-full bg-white text-black p-4 border-t border-gray-300 z-50 block md:hidden">
           {/* <!-- Footer halaman, bisa berisi informasi kontak, hak cipta, atau tautan sosial media --> */}
-          <p>&copy; 2022 Q-Max. All rights reserved.</p>
+          <MainLayoutFooter />
         </footer>
       </body>
     </html>
