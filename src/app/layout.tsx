@@ -1,6 +1,9 @@
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { MainLayoutHeader } from "./component";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +27,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [isShow, setIsShow] = useState<boolean>(true);
+
   return (
     <html lang="en">
       <head>
@@ -59,19 +64,7 @@ export default function RootLayout({
           <div className="lg:col-span-2 sm:col-span-12 col-span-12 hidden md:block shadow-md">
             <header>
               {/* <!-- Header halaman, bisa berisi judul, logo, atau navigasi --> */}
-              <nav>
-                <ul>
-                  <li>
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#about">About</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </nav>
+              <MainLayoutHeader isShow={isShow} setIsShow={setIsShow} />
             </header>
           </div>
           <div className="lg:col-span-10 sm:col-span-12 col-span-12">
