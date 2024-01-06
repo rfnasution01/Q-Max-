@@ -29,7 +29,7 @@ export function DashboardComparison() {
                 <h5 className="text-lg">Waktu prosessing</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
-                    <span className="text-green-600">
+                    <span className="text-[#1094DD]">
                       <CalendarCheck />
                     </span>
                   ) : (
@@ -44,7 +44,7 @@ export function DashboardComparison() {
                 <h5 className="text-lg">Biaya Transaksi</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
-                    <span className="text-green-600">
+                    <span className="text-[#1094DD]">
                       <Banknote />
                     </span>
                   ) : (
@@ -59,12 +59,12 @@ export function DashboardComparison() {
                 <h5 className="text-lg">Keamanan Transaksi</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
-                    <span className="text-green-600">
-                      <ShieldX />
+                    <span className="text-[#1094DD]">
+                      <ShieldCheck />
                     </span>
                   ) : (
                     <span className="text-red-600">
-                      <ShieldCheck />
+                      <ShieldX />
                     </span>
                   )}
                   <h6 className="text-sm font-light">{item?.kepercayaan}</h6>
@@ -74,7 +74,7 @@ export function DashboardComparison() {
                 <h5 className="text-lg">Koin yang Ditawarkan</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
-                    <span className="text-green-600">
+                    <span className="text-[#1094DD]">
                       <Bitcoin />
                     </span>
                   ) : (
@@ -89,7 +89,7 @@ export function DashboardComparison() {
                 <h5 className="text-lg">Experience</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
-                    <span className="text-green-600">
+                    <span className="text-[#1094DD]">
                       <Rotate3D />
                     </span>
                   ) : (

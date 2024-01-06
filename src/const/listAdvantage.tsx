@@ -1,4 +1,4 @@
-import { Radar, Send, ShieldCheck, Timer } from "lucide-react";
+import { DoorOpen, Radar, ShieldCheck, Timer } from "lucide-react";
 
 export const listAdvantage = [
   {
@@ -12,7 +12,7 @@ export const listAdvantage = [
     desc: "Kami mengerti kebutuhan pengguna kami. Oleh karena itu, Q-Max tidak membutuhkan proses login atau KYC yang rumit. Cukup masukkan koin yang ingin Anda beli, alamat dompet, dan jumlah yang diinginkan.",
   },
   {
-    icon: <Send size={90} />,
+    icon: <DoorOpen size={90} />,
     title: "Mudah",
     desc: "Q-Max menerima metode pembayaran dalam IDR melalui OVO, GOPAY, dan DANA. Kami selalu terbuka untuk menambahkan opsi pembayaran lainnya untuk meningkatkan kenyamanan pengguna.",
   },

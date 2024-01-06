@@ -4,3 +4,4 @@ export * from "./listConclusion";
 export * from "./listAdvantage";
 export * from "./listComparison";
 export * from "./listNetwork";
+export * from "./listPaymentProcess";
