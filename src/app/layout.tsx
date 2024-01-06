@@ -84,7 +84,7 @@ export default function RootLayout({
                 : "lg:col-span-11 md:col-span-11"
             } sm:col-span-12 col-span-12`}
           >
-            <main className="text-center">{children}</main>
+            <main className="text-center mb-28">{children}</main>
           </div>
         </div>
 
