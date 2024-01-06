@@ -1,5 +1,6 @@
 import {
   DashboardAdvantage,
+  DashboardComparison,
   DashboardCoverPage,
   DashboardIntro,
 } from "./component";
@@ -10,6 +11,7 @@ export default function Home() {
       <DashboardCoverPage />
       <DashboardIntro />
       <DashboardAdvantage />
+      <DashboardComparison />
     </div>
   );
 }

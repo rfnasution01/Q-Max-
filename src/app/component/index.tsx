@@ -7,3 +7,4 @@ export * from "./mobileMainLayoutHeader";
 export * from "./dashboardCoverPage";
 export * from "./dashboardIntro";
 export * from "./dashboardAdvantage";
+export * from "./dashboardComparison";
