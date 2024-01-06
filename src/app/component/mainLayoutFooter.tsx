@@ -25,7 +25,7 @@ export function MainLayoutFooter() {
           }`}
         >
           <span>{item?.icon}</span>
-          <h5 className="text-[14px]">{item?.name}</h5>
+          <h5 className="text-sm">{item?.name}</h5>
         </Link>
       ))}
     </div>

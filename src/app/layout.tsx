@@ -72,7 +72,7 @@ export default function RootLayout({
                 : "lg:col-span-1 md:col-span-1"
             } col-span-12 shadow-md`}
           >
-            <header>
+            <header className="sticky top-0 left-0">
               {/* <!-- Header halaman, bisa berisi judul, logo, atau navigasi --> */}
               <MainLayoutHeader isShow={isShow} setIsShow={setIsShow} />
             </header>

@@ -4,3 +4,4 @@ export * from "./props";
 export * from "./ui";
 export * from "./mainLayoutFooter";
 export * from "./mobileMainLayoutHeader";
+export * from "./dashboardCoverPage";
