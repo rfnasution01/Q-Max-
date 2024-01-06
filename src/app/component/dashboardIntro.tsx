@@ -12,9 +12,8 @@ export function DashboardIntro() {
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)",
         border: "1px solid rgba(255, 255, 255, 0.18)",
-        margin: "32px 0px",
       }}
-      className="grid grid-cols-12 gap-4"
+      className="grid grid-cols-12 gap-4 mt-8 my-20"
     >
       {listConclusion.map((item, idx) => (
         <div className="col-span-3" key={idx}>
