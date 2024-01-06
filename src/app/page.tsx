@@ -3,6 +3,7 @@ import {
   DashboardComparison,
   DashboardCoverPage,
   DashboardIntro,
+  DashboardNetwork,
 } from "./component";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <DashboardIntro />
       <DashboardAdvantage />
       <DashboardComparison />
+      <DashboardNetwork />
     </div>
   );
 }

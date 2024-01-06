@@ -25,7 +25,7 @@ export function DashboardComparison() {
             </h5>
             <hr />
             <div className="lg:p-8 md:p-4 p-3">
-              <div className="flex flex-col mb-1 mb-6">
+              <div className="flex flex-col gap-1 mb-1 mb-6">
                 <h5 className="text-lg">Waktu prosessing</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
@@ -40,7 +40,7 @@ export function DashboardComparison() {
                   <h6 className="text-sm font-light">{item?.transaksi}</h6>
                 </div>
               </div>
-              <div className="flex flex-col mb-1 mb-6">
+              <div className="flex flex-col gap-1 mb-1 mb-6">
                 <h5 className="text-lg">Biaya Transaksi</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
@@ -55,7 +55,7 @@ export function DashboardComparison() {
                   <h6 className="text-sm font-light">{item?.biaya}</h6>
                 </div>
               </div>
-              <div className="flex flex-col mb-1 mb-6">
+              <div className="flex flex-col gap-1 mb-1 mb-6">
                 <h5 className="text-lg">Keamanan Transaksi</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
@@ -70,7 +70,7 @@ export function DashboardComparison() {
                   <h6 className="text-sm font-light">{item?.kepercayaan}</h6>
                 </div>
               </div>
-              <div className="flex flex-col mb-1 mb-6">
+              <div className="flex flex-col gap-1 mb-1 mb-6">
                 <h5 className="text-lg">Koin yang Ditawarkan</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (
@@ -85,7 +85,7 @@ export function DashboardComparison() {
                   <h6 className="text-sm font-light">{item?.scability}</h6>
                 </div>
               </div>
-              <div className="flex flex-col mb-1 mb-6">
+              <div className="flex flex-col gap-1 mb-1 mb-6">
                 <h5 className="text-lg">Experience</h5>
                 <div className="flex gap-2 items-center">
                   {idx > 0 ? (

@@ -8,3 +8,4 @@ export * from "./dashboardCoverPage";
 export * from "./dashboardIntro";
 export * from "./dashboardAdvantage";
 export * from "./dashboardComparison";
+export * from "./dashboardNetwrok";
