@@ -6,3 +6,4 @@ export * from "./listComparison";
 export * from "./listNetwork";
 export * from "./listPaymentProcess";
 export * from "./listFeature";
+export * from "./listPaymentMethod";
