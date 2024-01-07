@@ -10,3 +10,4 @@ export * from "./dashboardAdvantage";
 export * from "./dashboardComparison";
 export * from "./dashboardNetwork";
 export * from "./dashboardPayment";
+export * from "./dashboardFeature";

@@ -2,6 +2,7 @@ import {
   DashboardAdvantage,
   DashboardComparison,
   DashboardCoverPage,
+  DashboardFeature,
   DashboardIntro,
   DashboardNetwork,
   DashboardPayment,
@@ -16,6 +17,7 @@ export default function Home() {
       <DashboardComparison />
       <DashboardNetwork />
       <DashboardPayment />
+      <DashboardFeature />
     </div>
   );
 }
