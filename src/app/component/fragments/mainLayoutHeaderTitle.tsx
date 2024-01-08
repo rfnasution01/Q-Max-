@@ -21,7 +21,7 @@ export function MainLayoutHeaderTitle({
           className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer"
         >
           <Webhook size={28} className="animate-spin duration-0" />
-          <h5 className="text-[24px] font-medium leading-relaxed tracking-wide">
+          <h5 className="text-2xl font-medium leading-relaxed tracking-wide">
             Q-MAX
           </h5>
         </Link>

@@ -45,7 +45,7 @@ export function MainLayoutHeaderNavigation({ isShow }: { isShow: boolean }) {
               } transition duration-300 ease-in-out`}
             >
               <span>{item?.icon}</span>
-              {isShow && <h5 className="text-[14px]">{item?.name}</h5>}
+              {isShow && <h5 className="text-lg">{item?.name}</h5>}
             </Link>
             <ul>
               {item?.subMenu &&
@@ -67,7 +67,7 @@ export function MainLayoutHeaderNavigation({ isShow }: { isShow: boolean }) {
                       } transition duration-300 ease-in-out`}
                     >
                       <span>{data?.icon}</span>
-                      {isShow && <h5 className="text-[14px]">{data?.name}</h5>}
+                      {isShow && <h5 className="text-lg">{data?.name}</h5>}
                     </Link>
                   </li>
                 ))}

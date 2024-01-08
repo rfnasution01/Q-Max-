@@ -10,24 +10,24 @@ export function MobileMainLayoutHeader() {
         className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer"
       >
         <Webhook size={20} className="animate-spin duration-0" />
-        <h5 className="text-[18px] font-medium leading-relaxed tracking-wide">
+        <h5 className="text-lg font-medium leading-relaxed tracking-wide">
           Q-MAX
         </h5>
       </Link>
       <div className="flex items-center gap-3">
         <ButtonComponent
           disabled
-          className="flex gap-2 items-center justify-center disabled:cursor-not-allowed text-[12px] bg-white text-black hover:text-white"
+          className="flex gap-2 items-center justify-center disabled:cursor-not-allowed text-xs bg-white text-black hover:text-white"
         >
           <Wallet size={16} />
-          <h5 className="text-[14px]">Connect</h5>
+          <h5 className="text-sm">Connect</h5>
         </ButtonComponent>
         <Link
           href="/bantuan"
           className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer pointer-events-none"
         >
           <HelpCircle size={20} />
-          <h5 className="text-[14px]">Help</h5>
+          <h5 className="text-sm">Help</h5>
         </Link>
       </div>
     </nav>

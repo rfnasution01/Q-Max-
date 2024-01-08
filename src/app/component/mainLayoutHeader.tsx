@@ -24,7 +24,7 @@ export function MainLayoutHeader({
         className="flex gap-2 items-center justify-center disabled:cursor-not-allowed"
       >
         <Wallet size={16} />
-        {isShow && <h5 className="text-[14px]">Connect Wallet</h5>}
+        {isShow && <h5 className="text-sm">Connect Wallet</h5>}
       </ButtonComponent>
     </div>
   );
