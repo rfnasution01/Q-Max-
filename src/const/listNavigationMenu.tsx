@@ -12,46 +12,46 @@ import {
 export const listNavigationMenu = [
   {
     name: "Dashboard",
-    icon: <LayoutDashboard size={16} />,
+    icon: <LayoutDashboard size={24} />,
     access: true,
     subMenu: [],
   },
   {
     name: "Katalog",
-    icon: <LayoutList size={16} />,
+    icon: <LayoutList size={24} />,
     access: true,
     subMenu: [],
   },
   {
     name: "Feature",
-    icon: <Landmark size={16} />,
+    icon: <Landmark size={24} />,
     access: true,
     subMenu: [
       {
         name: "Buy",
-        icon: <ShoppingBag size={16} />,
+        icon: <ShoppingBag size={24} />,
         access: false,
       },
       {
         name: "Earn",
-        icon: <LandPlot size={16} />,
+        icon: <LandPlot size={24} />,
         access: false,
       },
       {
         name: "Airdrop",
-        icon: <ArrowDownCircle size={16} />,
+        icon: <ArrowDownCircle size={24} />,
         access: false,
       },
       {
         name: "Claim",
-        icon: <Component size={16} />,
+        icon: <Component size={24} />,
         access: false,
       },
     ],
   },
   {
     name: "Bantuan",
-    icon: <HelpCircle size={16} />,
+    icon: <HelpCircle size={24} />,
     access: false,
     subMenu: [],
   },
