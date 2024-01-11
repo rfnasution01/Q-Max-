@@ -14,11 +14,11 @@ export function DashboardComparison() {
   return (
     <div className="my-20 flex flex-col gap-20">
       <h1 className="text-5xl">Comparison to Other Platform</h1>
-      <div className="flex gap-10">
+      <div className="flex lg:flex-row md:flex-row flex-col lg:gap-10 md:gap-10 gap-5">
         {listComparison.map((item, idx) => (
           <div
             key={idx}
-            className="flex-1 shadow hover:cursor-pointer hover:animate-pulse text-left"
+            className="lg:flex-1 md:flex-1 shadow hover:cursor-pointer hover:animate-pulse text-left"
           >
             <h5 className="text-2xl font-medium lg:p-8 md:p-4 p-3">
               {item?.title}
