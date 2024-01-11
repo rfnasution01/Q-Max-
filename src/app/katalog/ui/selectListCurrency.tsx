@@ -115,8 +115,6 @@ export function ListCurrency({
       formatGroupLabel={formatGroupLabel}
       components={{ Option }}
       onChange={(optionSelected, e) => {
-        console.log(e);
-
         setStateCurrency((prev) => ({
           ...prev,
           symbol: optionSelected?.symbol,

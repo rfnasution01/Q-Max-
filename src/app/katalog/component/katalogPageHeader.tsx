@@ -13,7 +13,7 @@ export function KatalogPageHeader({
   return (
     <div className="flex items-center lg:justify-between w-full gap-10">
       <KatalogHeaderInfo stateCurrency={stateCurrency} />
-      <div className="hidden lg:block">
+      <div className="hidden lg:block md:block">
         <KatalogHeaderCurrency
           stateCurrency={stateCurrency}
           setStateCurrency={setStateCurrency}

@@ -29,6 +29,7 @@ export function KatalogHeaderCurrency({
         <ModalCurrency
           setIsOpen={setIsOpen}
           setStateCurrency={setStateCurrency}
+          stateCurrency={stateCurrency}
         />
       )}
     </>
