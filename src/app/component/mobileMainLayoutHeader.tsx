@@ -4,7 +4,7 @@ import { ButtonComponent } from ".";
 
 export function MobileMainLayoutHeader() {
   return (
-    <nav className="flex w-full justify-between items-center fixed top-0 left-0 w-full bg-white text-black p-4 border-t border-gray-300 z-50 block md:hidden">
+    <nav className="shadow-md flex w-full justify-between items-center fixed top-0 left-0 w-full bg-white text-black p-4 border-t border-gray-300 z-50 block md:hidden">
       <Link
         href="/"
         className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer"
