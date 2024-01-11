@@ -8,7 +8,7 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
     <div className="border shadow-md mb-5 lg:mb-0 md:mb-0">
       <h1 className="text-2xl mb-4">{title}</h1>
       <div className="flex">
-        <div className="border-r-2 min-w-[40%] md:min-w-[40%] max-w-[40%]">
+        <div className="border-r-2 min-w-[40%] md:min-w-[40%] max-w-[50%]">
           {title === "Payment Process"
             ? [
                 "Mengisi Form",
@@ -17,7 +17,7 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
                 "Proses Transfer",
               ].map((item, idx) => (
                 <div
-                  className={`text-start p-2 pr-4 border-r-2 mb-1 ${
+                  className={`text-start p-4 pr-4 border-r-2 mb-1 ${
                     selectedIdx === idx
                       ? "border-[#1094DD] text-[#1094DD]"
                       : "border-[transparent]"
@@ -25,12 +25,12 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
                   key={idx}
                   onClick={() => setSelectedIdx(idx)}
                 >
-                  <h4>{item}</h4>
+                  <h4 className="lg:text-lg md:text-md text-sm">{item}</h4>
                 </div>
               ))
             : ["Gopay", "Dana", "OVO"].map((item, idx) => (
                 <div
-                  className={`text-start p-2 pr-4 border-r-2 mb-1 ${
+                  className={`text-start p-4 pr-4 border-r-2 mb-1 ${
                     selectedIdx === idx
                       ? "border-[#1094DD] text-[#1094DD]"
                       : "border-[transparent]"
@@ -46,21 +46,21 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
           {title === "Payment Process"
             ? listPaymentProcess.find((item) => item?.id === selectedIdx) && (
                 <div className="text-left">
-                  <p className="flex items-center justify-center my-4">
+                  <p className="flex items-center justify-center my-4 hidden lg:block md:block">
                     {
                       listPaymentProcess.find(
                         (item) => item?.id === selectedIdx
                       )?.icon
                     }
                   </p>
-                  <p className="text-2xl font-medium">
+                  <p className="lg:text-2xl md:text-lg text-md font-medium">
                     {
                       listPaymentProcess.find(
                         (item) => item?.id === selectedIdx
                       )?.title
                     }
                   </p>
-                  <p className="text-md font-light">
+                  <p className="lg:text-md md:text-md text-xs font-light">
                     {
                       listPaymentProcess.find(
                         (item) => item?.id === selectedIdx
@@ -71,13 +71,13 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
               )
             : listPaymentMethod.find((item) => item?.id === selectedIdx) && (
                 <div className="text-left">
-                  <p className="text-2xl font-medium text-center mb-3">
+                  <p className="lg:text-2xl md:text-lg text-md font-medium text-center mb-3">
                     {
                       listPaymentMethod.find((item) => item?.id === selectedIdx)
                         ?.title
                     }
                   </p>
-                  <p className="text-md font-light">
+                  <p className="lg:text-md md:text-md text-xs font-light">
                     {listPaymentMethod
                       .find((item) => item?.id === selectedIdx)
                       ?.desc?.map((step, index) => (
