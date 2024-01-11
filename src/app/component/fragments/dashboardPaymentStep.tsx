@@ -5,10 +5,10 @@ export const DashboardPaymentStep = ({ title }: { title: string }) => {
   const [selectedIdx, setSelectedIdx] = useState(0);
 
   return (
-    <div className="border shadow-md p-4">
+    <div className="border shadow-md mb-5 lg:mb-0 md:mb-0">
       <h1 className="text-2xl mb-4">{title}</h1>
       <div className="flex">
-        <div className="border-r-2 min-w-[40%]">
+        <div className="border-r-2 min-w-[40%] md:min-w-[40%] max-w-[40%]">
           {title === "Payment Process"
             ? [
                 "Mengisi Form",

@@ -26,7 +26,7 @@ export function MobileMainLayoutHeader() {
           Q-MAX
         </h5>
       </Link>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center lg:gap-3 md:gap-3 gap-1">
         <KatalogHeaderCurrency
           stateCurrency={stateCurrency}
           setStateCurrency={setStateCurrency}

@@ -10,8 +10,8 @@ export function DashboardPaymentGrafic() {
           {listPaymentProcess.map((item, idx) => (
             <li key={idx}>
               <div className="card">
-                <a href="#" className="flex flex-col items-center gap-2">
-                  <span>{item?.icon}</span>
+                <a href="#" className="flex flex-col items-center">
+                  <span className="hidden lg:block md:block">{item?.icon}</span>
                   <span className="text-md">
                     {idx + 1}. {item?.title}
                   </span>

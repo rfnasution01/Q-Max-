@@ -17,10 +17,12 @@ export function DashboardIntro() {
     >
       {listConclusion.map((item, idx) => (
         <div className="col-span-3" key={idx}>
-          <h5 className="text-4xl font-semibold text-[#000] mb-1">
+          <h5 className="lg:text-4xl text-lg font-semibold text-[#000] mb-1">
             {item?.title}
           </h5>
-          <h5 className="text-md text-[#333] font-light">{item?.desc}</h5>
+          <h5 className="lg:text-md text-sm text-[#333] font-light">
+            {item?.desc}
+          </h5>
         </div>
       ))}
     </div>
