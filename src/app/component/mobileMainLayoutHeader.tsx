@@ -1,10 +1,22 @@
+"use client";
 import { HelpCircle, Wallet, Webhook } from "lucide-react";
 import Link from "next/link";
 import { ButtonComponent } from ".";
+import { useState } from "react";
+import { KatalogHeaderCurrency } from "../katalog/component/fragments";
 
 export function MobileMainLayoutHeader() {
+  const [stateCurrency, setStateCurrency] = useState<
+    Record<string, string | undefined>
+  >({
+    symbol: "USD",
+    currencySymbol: "$",
+    price: "1",
+    id: "united-states-dollar",
+  });
+
   return (
-    <nav className="flex w-full justify-between items-center fixed top-0 left-0 w-full bg-white text-black p-4 border-t border-gray-300 z-50 block md:hidden">
+    <nav className="shadow-md flex w-full justify-between items-center fixed top-0 left-0 w-full bg-white text-black p-4 border-t border-gray-300 z-50 block md:hidden">
       <Link
         href="/"
         className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer"
@@ -15,6 +27,10 @@ export function MobileMainLayoutHeader() {
         </h5>
       </Link>
       <div className="flex items-center gap-3">
+        <KatalogHeaderCurrency
+          stateCurrency={stateCurrency}
+          setStateCurrency={setStateCurrency}
+        />
         <ButtonComponent
           disabled
           className="flex gap-2 items-center justify-center disabled:cursor-not-allowed text-xs bg-white text-black hover:text-white"
