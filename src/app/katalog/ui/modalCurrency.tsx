@@ -158,7 +158,7 @@ export function ModalCurrency({
                         item?.type === "fiat"
                           ? "bg-amber-600"
                           : "bg-emerald-600"
-                      }`}
+                      } hidden lg:block md:block`}
                     >
                       <h5 className="text-md font-medium">
                         {item?.currencySymbol ?? "-"}
@@ -212,7 +212,7 @@ export function ModalCurrency({
                   <div
                     className={`min-w-[45px] min-h-[45px] flex items-center justify-center rounded-full text-white ${
                       item?.type === "fiat" ? "bg-amber-600" : "bg-emerald-600"
-                    }`}
+                    } hidden lg:block md:block`}
                   >
                     <h5 className="text-md font-medium">
                       {item?.currencySymbol ?? "-"}
