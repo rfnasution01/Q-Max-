@@ -22,7 +22,6 @@ export default function KatalogLayout({ children }: LayoutProps) {
         stateCurrency={stateCurrency}
         setStateCurrency={setStateCurrency}
       />
-
       {children}
     </div>
   );

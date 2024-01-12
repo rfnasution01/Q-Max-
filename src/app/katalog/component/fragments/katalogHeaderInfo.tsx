@@ -75,19 +75,6 @@ export function KatalogHeaderInfo({
   return (
     <div className="invisible-scrollbar hover:cursor-pointer">
       <div className="flex items-center gap-2">
-        <h4 className="text-md font-medium whitespace-nowrap">Market Cap :</h4>
-        {loading || !stateHeaderText.marketCap ? (
-          <Loader className="animate-spin" />
-        ) : (
-          <FormatManipulationComponent
-            originPrice={Number(stateHeaderText.marketCap)}
-            currencyPrice={Number(stateCurrency?.price)}
-            currencySymbol={stateCurrency?.currencySymbol}
-            className="text-sm font-light"
-          />
-        )}
-      </div>
-      <div className="flex items-center gap-2">
         <h4 className="text-md font-medium whitespace-nowrap">Volume :</h4>
         {loading || !stateHeaderText.volume ? (
           <Loader className="animate-spin" />
