@@ -1,3 +1,4 @@
+"use client";
 import { capitalizeFirstLetterFromLowercase, convertSlugToText } from "@/utils";
 import React, {
   CSSProperties,
