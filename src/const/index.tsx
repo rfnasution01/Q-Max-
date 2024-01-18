@@ -7,3 +7,4 @@ export * from "./listNetwork";
 export * from "./listPaymentProcess";
 export * from "./listFeature";
 export * from "./listPaymentMethod";
+export * from "./listKatalogInfo";

@@ -18,11 +18,9 @@ export function KatalogHeaderCurrency({
     <>
       <div
         onClick={() => setIsOpen(true)}
-        className="flex gap-2 items-center p-3 hover:shadow-md hover:rounded-full hover:cursor-pointer"
+        className="flex gap-2 items-center lg:p-3 md:p-3 p-0 text-sm lg:text-xl md:text-lg hover:shadow-md hover:rounded-full hover:cursor-pointer"
       >
-        <h5 className="text-[18px] text-[#333]">
-          {stateCurrency.symbol ?? "-"}
-        </h5>
+        <h5>{stateCurrency.symbol ?? "-"}</h5>
         <ChevronDown />
       </div>
       {isOpen && (

@@ -26,7 +26,7 @@ export function MobileMainLayoutHeader() {
           Q-MAX
         </h5>
       </Link>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center lg:gap-3 md:gap-3 gap-1">
         <KatalogHeaderCurrency
           stateCurrency={stateCurrency}
           setStateCurrency={setStateCurrency}
@@ -35,14 +35,18 @@ export function MobileMainLayoutHeader() {
           disabled
           className="flex gap-2 items-center justify-center disabled:cursor-not-allowed text-xs bg-white text-black hover:text-white"
         >
-          <Wallet size={16} />
+          <span className="hidden lg:block md:block">
+            <Wallet size={16} />
+          </span>
           <h5 className="text-sm">Connect</h5>
         </ButtonComponent>
         <Link
           href="/bantuan"
           className="flex gap-2 items-center hover:text-[#1094DD] hover:cursor-pointer pointer-events-none"
         >
-          <HelpCircle size={20} />
+          <span className="hidden lg:block md:block">
+            <HelpCircle size={20} />
+          </span>
           <h5 className="text-sm">Help</h5>
         </Link>
       </div>

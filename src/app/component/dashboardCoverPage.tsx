@@ -2,9 +2,7 @@ import {
   ArrowLeftFromLine,
   ArrowRightFromLine,
   AudioLines,
-  ChevronLeft,
 } from "lucide-react";
-import { ButtonComponent } from ".";
 import Link from "next/link";
 
 export function DashboardCoverPage() {
@@ -37,7 +35,7 @@ export function DashboardCoverPage() {
           </Link>
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 lg:flex lg:justify-center hidden lg:block">
         <AudioLines size={270} className="animate-slide" />
       </div>
     </div>

@@ -15,7 +15,7 @@ export function FormatManipulationComponent({
   className,
 }: FormatManipulationComponentProps) {
   const price = numberDecimalSetting(originPrice, currencyPrice);
-  const splitPrice = price.toString().split(".");
+  const splitPrice = price?.toString().split(".");
   return (
     <h5 className={`whitespace-nowrap ${className}`} style={{ ...style }}>
       <span className="text-[14px] text-[#333]">{currencySymbol}</span>{" "}
