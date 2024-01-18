@@ -81,7 +81,7 @@ export function convertCurrency(priceOrigin = 0, priceCurrency = 0) {
 }
 
 export function formatNumberWithCommas(number = 0) {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return number?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 export function numberDecimalSetting(priceOrigin = 0, priceCurrency = 0) {
@@ -107,7 +107,7 @@ export function convertNumberToString(number = 0) {
   } else if (number >= 1000) {
     return (number / 1000).toFixed(1) + " K";
   } else {
-    return number.toString();
+    return number?.toString();
   }
 }
 

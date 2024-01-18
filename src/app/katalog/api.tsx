@@ -91,8 +91,8 @@ export async function GetHiistoryById({
   const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/assets/${id}/history`;
   const queryParams = new URLSearchParams({
     interval,
-    ...(start !== undefined && { start: start.toString() }),
-    ...(end !== undefined && { end: end.toString() }),
+    ...(start !== undefined && { start: start?.toString() }),
+    ...(end !== undefined && { end: end?.toString() }),
   });
   const url = `${baseUrl}?${queryParams}`;
 

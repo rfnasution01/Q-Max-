@@ -2,9 +2,7 @@ import {
   ArrowLeftFromLine,
   ArrowRightFromLine,
   AudioLines,
-  ChevronLeft,
 } from "lucide-react";
-import { ButtonComponent } from ".";
 import Link from "next/link";
 
 export function DashboardCoverPage() {
