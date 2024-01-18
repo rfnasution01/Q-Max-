@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
-import ReactApexChart from "react-apexcharts";
+import dynamic from "next/dynamic";
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 export const KatalogInfoGauge = ({
   series,
@@ -93,6 +97,7 @@ export const KatalogInfoGauge = ({
           options={options}
           series={series}
           type="radialBar"
+          width="auto"
           height={350}
         />
       </div>
